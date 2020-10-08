@@ -6,8 +6,8 @@ copyright: CC-BY-SA-4.0
 
 theme:
     name: 'material'
-    logo: '/theme/turris-logo.svg'
-    favicon: '/theme/favicon.ico'
+    logo: 'theme/turris-logo.svg'
+    favicon: 'theme/favicon.ico'
     font: false
     language: 'en'
     scheme: preference
