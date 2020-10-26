@@ -81,6 +81,9 @@ migration.
 As for now, there is disabled opt-in migration for Turris 1.x routers, however
 there is a way how to switch to the latest major version.
 
+!!! warning
+    By following this 5.x migration howto, you will loose your current settings and will have to configure everything from scratch.
+
 If you will run one by the following commands, it will download medkit from the
 [HBS branch](../geek/testing.md), import the medkit as the factory snapshot and
 reset to factory defaults using the latest version of Turris OS.  Reboot will do
