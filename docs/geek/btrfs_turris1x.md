@@ -37,7 +37,7 @@ before, you will switch to UBIFS just by resetting to factory settings.
 ### Inserting microSD card
 
 You will need to unplug the router from the power supply. You need to unscrew a
-few screws from the upper and top cover of the router. microSD card slot is
+few screws from the top cover of the router to remove it. microSD card slot is
 located underneath the RAM slot. Very cautiously remove RAM from its slot by
 pressing clips on both sides and RAM should pull itself and then you can insert
 the microSD card slowly and without using force.
