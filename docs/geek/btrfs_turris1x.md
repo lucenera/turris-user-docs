@@ -42,7 +42,7 @@ located underneath the RAM slot. Very cautiously remove RAM from its slot by
 pressing clips on both sides and RAM should pop out itself. Then you can insert
 the microSD card slowly and without using force.
 
-If the card is in it is place, you can now put back the RAM and plug the power
+If the card is in it is place, you can now put back the RAM, top cover and plug the power
 cord into the router.
 
 ### Installing package
