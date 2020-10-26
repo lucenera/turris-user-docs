@@ -39,7 +39,7 @@ before, you will switch to UBIFS just by resetting to factory settings.
 You will need to unplug the router from the power supply. You need to unscrew a
 few screws from the top cover of the router to remove it. microSD card slot is
 located underneath the RAM slot. Very cautiously remove RAM from its slot by
-pressing clips on both sides and RAM should pull itself and then you can insert
+pressing clips on both sides and RAM should pop out itself. Then you can insert
 the microSD card slowly and without using force.
 
 If the card is in it is place, you can now put back the RAM and plug the power
