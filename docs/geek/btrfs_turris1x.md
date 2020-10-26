@@ -61,7 +61,7 @@ It does nothing by itself, so it is safe to install.
 
 Next step is to execute the `btrfs_migrate` command, which is a script that will
 make sure that you want to really want to wipe all the data on microSD card and
-afterward format it is to Btrfs. Then it will copy all the current content on
+afterward it will format the card to Btrfs. Then it will copy all the current content on
 the NAND (internal storage) to microSD card and set U-boot environment to boot
 from microSD card.
 
