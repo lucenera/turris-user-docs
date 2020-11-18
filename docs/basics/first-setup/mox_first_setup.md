@@ -24,6 +24,10 @@ during initial setup**. To eliminate potential security risks, setup your MOX
 first, go through the update procedure and connect other untrusted devices only
 afterwards.
 
+!!! tip
+    There is also a way to configure Turris Mox over Wi-Fi by using [configuration
+    file and USB drive](./ethernetless.md).
+
 ### One Ethernet port device
 
 The trickiest case is if you have **only one Ethernet port**. Therefore we
@@ -51,3 +55,43 @@ When booted, you can access the first-run wizard by using a web browser and
 entering as URL address of your router. In case of MOX running as DHCP server, web
 interface will be at <http://192.168.1.1>.
 
+## First setup without Ethernet
+
+These days it is common that laptops do not have Ethernet socket and that can make
+initial configuration of Turris router pretty complicated. Alternative initial
+configuration was added in Turris OS 5.2.0. It uses configuration file on USB
+flash drive to set password for web configuration interface and to enable Wi-Fi.
+
+Configuration file is in [JSON](https://en.wikipedia.org/wiki/JSON) file format.
+You can use following example as a base for your configuration file.
+```
+{
+	"foris_password": "ForisPassword_ChangeThis!",
+	"wireless": {
+		"ssid": "TurrisConfigWifi",
+		"key": "WiFiPassword_ChangeThis!"
+	}
+}
+```
+Make sure that you change all passwords!
+
+Save your configuration file to file named `medkit-config.json` to root directory
+of USB drive. Following file systems are supported: _ext4_, _Btrfs_, _XFS_ and
+_FAT32_.
+
+With prepared USB drive you can connect it to router and perform either [factory
+reset](../../hw/omnia/rescue_modes.md#rollback-to-factory-reset) (only if 
+[factory version](../tos_versions/#versions-of-turris-os-provided-from-factory) of
+your router is Turris OS 5.2.0 or newer) or [flash via
+USB](../../hw/omnia/rescue_modes.md#re-flash-router). Note that flash via USB is
+highly suggested as factory version of Turris OS in your device might not support
+this feature. It also removes possibility of exploit of old security holes.
+
+Configuration is applied on first boot of device (your USB drive has to be
+connected at that time). You should eventually be able to connect device you plan
+to use for configuration to Wi-Fi network with name as you set (`ssid`). It is
+protected by password you set (`key`). Now you are connected to router's LAN
+network and you can continue by accessing web configuration interface as described
+at the beginning of this article.
+
+USB drive can be safely removed when you access router's configuration interface.
