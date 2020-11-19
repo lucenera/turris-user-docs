@@ -33,7 +33,7 @@ through the rest of the setup.
 
 !!! tip
 	There is also a way to configure Turris Omnia over Wi-Fi by using
-	[configuration file and USB drive](./ethernetless.md).
+	[a configuration file and a USB drive](./ethernetless.md).
 
 !!! tip
     On Turris Omnia, you can download the latest [medkit](https://repo.turris.cz/hbs/medkit/omnia-medkit-latest.tar.gz) and [flash your router

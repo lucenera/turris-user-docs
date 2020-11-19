@@ -25,8 +25,8 @@ first, go through the update procedure and connect other untrusted devices only
 afterwards.
 
 !!! tip
-    There is also a way to configure Turris Mox over Wi-Fi by using [configuration
-    file and USB drive](./ethernetless.md).
+    There is also a way to configure Turris Mox over Wi-Fi by using [a configuration
+    file and a USB drive](./ethernetless.md).
 
 ### One Ethernet port device
 
