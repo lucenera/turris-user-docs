@@ -119,6 +119,11 @@ Update is finished once **you receive notification** that migration was finished
 Message in question starts with with sentence: _Migraton from Turris OS 3.x was
 completed._.
 
+!!! danger
+    On Turris 1.x you have to manually run `ROOT_DIR=/
+	/etc/updater/hook_postupdate/10_kernel-install` after migration completes
+	before first reboot. Failing to not doing so results in not-booting router.
+
 ## Known problems and solutions
 You can encounter some problems that are caused by automatic migration.  Not all
 problems can be automatically removed. These are known problems and solutions for
@@ -145,6 +150,13 @@ removal sends this message and it is removed because it is replaced by new one.
 This is just false warning but just to be sure check that you have
 `turris1x-btrfs` package installed in our system before reboot if you are running
 from Btrfs microSD card.
+
+##### Opkg can't update repositories index after migration
+OpenWrt introduced new concept for packages called "Alternatives".  Reason for
+Opkg failure is that appropriate alternative is not selected after migration. This
+can affect also other tools but `wget` is the most profound one.
+
+Solution is to run `update_alternatives.sh` command after migration completes.
 
 
 ## Plans for automatic migration
